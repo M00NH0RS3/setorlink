@@ -1,0 +1,166 @@
+body {
+    background-image: url(../img/background-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border-radius: 50px;
+    background-color: #cae3ea;
+    margin: 10px;
+}
+
+#type {
+    padding-right: 50px;
+}
+
+.input {
+    background-color: transparent;
+    width: 200px;
+    padding: 12px 2px;
+    margin: 8px 0;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    background-color: #22058b;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #22058b;
+    background-color: whitesmoke;
+}
+
+.loginTela {
+    background-color: rgba(22, 142, 197, 0.514);
+    padding: 40px 40px 20px 40px;
+    border-radius: 40px;
+}
+
+i {
+    margin: 5px;
+    padding-left: 5px;
+}
+
+i.fa-eye {
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+i.fa-eye-slash {
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#logo {
+    height: 100px;
+    margin: 50px;
+    padding: 15px;
+    /* background-color: rgba(252, 252, 252, 0.217); */
+    border-radius: 15px;
+}
+
+a {
+    color: whitesmoke;
+    /* font-style: none; */
+    font-weight: bold;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#info {
+    height: 100vh;
+    background-color: #22058b;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+.positionOpen {
+    box-shadow: -50vw 0px 0px #0e0e66a7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+}
+
+.positionClose {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+button#closeInfo{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+.fa-circle-xmark {
+    font-size: 30px;
+    color: #daf7fe;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #daf7fe;
+}
+
+.contSobre {
+    font-size: 18px;
+    color: black;
+    background-color: rgba(223, 247, 255, 0.815);
+    margin: 23px;
+    padding: 15px;
+    border-radius: 15px;
+
+}

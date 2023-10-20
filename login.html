@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <section id="info" class="positionClose">
+    <div id="cabecalho">
+      <span></span>
+      <h2>NOSSAS DIRETRIZES</h2>
+      <button id="closeInfo"><i class="fa-solid fa-circle-xmark" onclick="fecharInfo()"></i></button>
+    </div>
+    <section id="sobre">
+      <div class="contSobre">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi quibusdam nobis necessitatibus aut eius. Numquam nisi excepturi illo obcaecati facere ipsa blanditiis maiores sapiente. Dolorum enim facilis nihil obcaecati.</p>
+      </div>
+      <div class="contSobre">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi quibusdam nobis necessitatibus aut eius. Numquam nisi excepturi illo obcaecati facere ipsa blanditiis maiores sapiente. Dolorum enim facilis nihil obcaecati.</p>
+      </div>
+      <div class="contSobre">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi quibusdam nobis necessitatibus aut eius. Numquam nisi excepturi illo obcaecati facere ipsa blanditiis maiores sapiente. Dolorum enim facilis nihil obcaecati.</p>
+      </div>
+      <div class="contSobre">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi quibusdam nobis necessitatibus aut eius. Numquam nisi excepturi illo obcaecati facere ipsa blanditiis maiores sapiente. Dolorum enim facilis nihil obcaecati.</p>
+      </div>
+    </section>
+  </section>
+
+  <header>
+    <img id="logo" src="./src/img/logo-setorlink.png" alt="logo-setorlink">
+    <i class="fa-solid fa-bars" onclick="abrirInfo()"></i>
+  </header>
+
+  <form>
+    <div class="loginTela">
+      <div class="inputBox">
+        <i class="fa-regular fa-user"></i>
+        <input type="text" id="username" name="username" class="input" placeholder="Username" autocomplete="off" />
+      </div>
+
+      <div class="inputBox">
+        <i class="fa-solid fa-key"></i>
+        <input type="password" id="password" name="password" class="input" placeholder="Password" autocomplete="off" />
+        <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha()"></i>
+      </div>
+
+      <input type="submit" value="Login" class="button" />
+      <p><a href="#">Create Account</a> | <a href="#">Forgot Password</a></p>
+    </div>
+  </form>
+  <script src="./src/js/viewPassword.js"></script>
+  <script src="./src/js/openInfo.js"></script>
+</body>
+
+</html>
