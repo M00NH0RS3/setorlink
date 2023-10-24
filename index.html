@@ -41,21 +41,22 @@
     <div class="loginTela">
       <div class="inputBox">
         <i class="fa-regular fa-user"></i>
-        <input type="text" id="username" name="username" class="input" placeholder="Username" autocomplete="off" />
+        <input type="text" id="username" name="username" class="input" placeholder="Username" autocomplete="off" required />
       </div>
 
       <div class="inputBox">
         <i class="fa-solid fa-key"></i>
-        <input type="password" id="password" name="password" class="input" placeholder="Password" autocomplete="off" />
+        <input type="password" id="password" name="password" class="input" placeholder="Password" autocomplete="off" required />
         <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha()"></i>
       </div>
 
-      <input type="submit" value="Login" class="button" />
+      <input type="submit" value="Login" class="button" id="login" onclick="acessarMenu()"/>
       <p><a href="#">Create Account</a> | <a href="#">Forgot Password</a></p>
     </div>
   </form>
   <script src="./src/js/viewPassword.js"></script>
   <script src="./src/js/openInfo.js"></script>
+  <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
