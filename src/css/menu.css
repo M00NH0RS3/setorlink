@@ -8,14 +8,15 @@
 
 body{
     height: 100vh;
+    background-color: #232354;
 }
 
 nav.menu-lateral{
     width: 80px;
     height: 100%;
-    background-color: #202020;
+    background-color: #030367;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #ff0077;
+    box-shadow: 3px 0 0 #daf7fe;
 
     position: fixed;
     top: 0;
@@ -50,11 +51,11 @@ ul li.item-menu{
 }
 
 ul li.ativo{
-    background-color: #ff0077;
+    background-color: #daf7fe;
 }
 
 ul li.item-menu:hover{
-    background-color: #ff0077;
+    background-color: #daf7fe;
 }
 
 ul li.item-menu a{
@@ -65,6 +66,14 @@ ul li.item-menu a{
     display: flex;
     margin-bottom: 20px;
     line-height: 40px;
+}
+
+ul li.item-menu.ativo a{
+    color: #030367;
+}
+
+ul li.item-menu:hover a{
+    color: #030367;
 }
 
 ul li.item-menu a .txt-link{
