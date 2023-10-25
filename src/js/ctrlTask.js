@@ -10,7 +10,7 @@ inputBox.addEventListener('keyup', function(event){
 
 let addItem = (inputBox) => {
     let listItem = document.createElement('li');
-    listItem.innerHTML = `${inputBox}<i></i>`;
+    listItem.innerHTML = `${inputBox}<i id="remove" class="fa-solid fa-circle-xmark"></i>`;
 
         listItem.addEventListener('click', function(){
             this.classList.toggle('done');
