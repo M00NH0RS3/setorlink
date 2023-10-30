@@ -113,6 +113,14 @@ function CreateTodoElement(item) {
 
 function DisplayTodos(){
     Load();
+
+    for (let i = 0; i < todos.length; i++) {
+        const item = todos[i];
+
+        const { item_el } = CreateTodoElement(item);
+
+        list_el.append(item_el);
+    }
 }
 
 DisplayTodos();
