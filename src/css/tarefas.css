@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 button{
@@ -14,8 +16,9 @@ button{
 }
 
 body{
-    background-color: #242948;
     color: #fff;
+    height: 100vh;
+    background-color: #232354;
 }
 
 main{
@@ -105,6 +108,7 @@ main{
 
 .actions button.remove-btn{
     color: crimson;
+    font-size: 16px;
 }
 
 .actions button:hover{
@@ -113,4 +117,100 @@ main{
 
 .actions button:last-of-type{
     margin-right: 0;
+}
+
+
+
+
+
+/* SIDEBAR */
+
+
+
+
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #030367;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #daf7fe;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.btn-expandir > i{
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #daf7fe;
+}
+
+ul li.item-menu:hover{
+    background-color: #daf7fe;
+}
+
+ul li.item-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu.ativo a{
+    color: #030367;
+}
+
+ul li.item-menu:hover a{
+    color: #030367;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
 }

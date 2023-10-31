@@ -57,12 +57,16 @@ function CreateTodoElement(item) {
     actions_el.classList.add('actions');
 
     const edit_btn_el = document.createElement('button');
-    edit_btn_el.classList.add('material-icons');
-    edit_btn_el.innerText = 'edit';
-    
+    const edit_icon = document.createElement('i');
+    edit_icon.classList.add('fa-solid', 'fa-pencil');
+    edit_btn_el.appendChild(edit_icon);
+
+
     const remove_btn_el = document.createElement('button');
-    remove_btn_el.classList.add('material-icons', 'remove-btn');
-    remove_btn_el.innerText = 'remove_circle';
+    remove_btn_el.classList.add('remove-btn');
+    const remove_icon = document.createElement('i');
+    remove_icon.classList.add('fa-solid', 'fa-circle-minus');
+    remove_btn_el.appendChild(remove_icon);
 
     actions_el.append(edit_btn_el);
     actions_el.append(remove_btn_el);
