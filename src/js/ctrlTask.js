@@ -51,12 +51,13 @@ function CreateTodoElement(item) {
     const input_el = document.createElement('input');
     input_el.type = 'text';
     input_el.value = item.text;
-    item_el.setAttribute('disabled', '');
+    input_el.setAttribute('disabled', '');
 
     const actions_el = document.createElement('div');
     actions_el.classList.add('actions');
 
     const edit_btn_el = document.createElement('button');
+    edit_btn_el.classList.add('edit-btn');
     const edit_icon = document.createElement('i');
     edit_icon.classList.add('fa-solid', 'fa-pencil');
     edit_btn_el.appendChild(edit_icon);
@@ -92,6 +93,8 @@ function CreateTodoElement(item) {
 
     input_el.addEventListener('input', () => {
         item.text = input_el.value;
+
+        Save();
     });
     
     input_el.addEventListener('blur', () => {
