@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/criarConta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Criar Conta</title>
+    </head>
+
+    <body>
+
+    <header>
+        <img id="logo" src="/src/img/logo-setorlink.png" alt="logo-setorlink">
+    </header>
+
+    <form>
+        <div class="loginTela">
+        <div class="inputBox">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" id="username" name="username" class="input" placeholder="Username" autocomplete="off" required />
+        </div>
+
+        <div class="inputBox">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="password" name="password" class="input" placeholder="Password" autocomplete="off" required />
+            <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha()" ></i>
+        </div>
+        <!-- <div class="inputBox">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="password-check" name="password-check" class="input" placeholder="Confirm Password" autocomplete="off" required />
+            <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha()" ></i>
+        </div> -->
+
+        <input type="submit" value="Criar Conta" class="button" id="criar" onclick="acessarLogin(); return false"/>
+        
+
+        </div>
+    </form>
+    <script src="/src/js/viewPassword.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/login.js"></script>
+    <script src="/src/js/criarConta.js"></script>
+    
+    </body>
+
+    </html>

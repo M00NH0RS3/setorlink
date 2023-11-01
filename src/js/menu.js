@@ -1,12 +1,3 @@
-function acessarMenu() {
-    var btnLogin = document.getElementById('login');
-    
-    btnLogin.addEventListener('click', function() {
-        window.location.href = './src/templates/menu.html';
-    });
-}
-
-
 var menuItem = document.querySelectorAll('.item-menu')
 
 function selectLink(){
