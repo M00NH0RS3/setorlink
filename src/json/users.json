@@ -1,12 +1,10 @@
-{
-    "usuarios": [
-        {
-            "login": "adm",
-            "senha": "000"
-        },
-        {
-            "login": "meki",
-            "senha": "2603"
-        }
-    ]
-}
+[
+    {
+        "nome": "maco",
+        "senha": "2603"
+    },
+    {
+        "nome": "fi",
+        "senha": "0705"
+    }
+]

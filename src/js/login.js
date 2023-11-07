@@ -31,6 +31,20 @@ function logar(){
 
     fetch('login',{
         method:'POST',
-        body: JSON.stringify
+        body: JSON.stringify({
+            nomes:nomes,
+            senha:senha
+        }),
+        headers:{'content-type':'application/json'}
     })
-}
+    
+    .then(async (resp)=> {
+        var status = await resp.text();
+        console.log(status)
+        if(status == 'conectado'){
+            location.href("./src/templates/menu.html");
+        }else{
+            alert('Usuário e/ou senha inválidos!');
+        }
+    });
+    }
