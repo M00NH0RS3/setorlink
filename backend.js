@@ -13,7 +13,7 @@ app.use(express.urlencoded());
 app.use(session({secret:'abc'}));
 
     // configuracoes
-    app.set('port', process.env.PORT || 5500)
+    app.set('port', process.env.PORT || 3000)
 
 // seccao de login
 
