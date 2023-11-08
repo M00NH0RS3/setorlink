@@ -17,11 +17,11 @@ app.use(session({secret:'abc'}));
 
 // seccao de login
 
-app.use('./src/templates', (req, res, next) => {
+app.use('/src/templates', (req, res, next) => {
     if(req.session.nome){
         next();
     }else{
-        res.redirect('/index.html');
+        res.redirect('/src/index.html');
     }
 });
 

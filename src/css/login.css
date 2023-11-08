@@ -110,6 +110,7 @@ a {
     background-color: #22058b;
     z-index: 1;
     transition: all .4s ease-in-out;
+    overflow-y: auto;
 }
 
 .positionOpen {
@@ -170,3 +171,15 @@ p.links{
     align-items: center;
     justify-content:space-evenly;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0e0e66;
+    border-radius: 50px;
+  }

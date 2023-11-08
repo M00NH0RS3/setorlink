@@ -11,7 +11,7 @@
 //             break
 //         }
 //     }
-    
+// 
 //     if (validaLogin == true){
 //         location.href = './src/templates/menu.html';
 //     }else{
@@ -29,7 +29,7 @@ function logar(){
         senha:senha
     }));
 
-    fetch('login',{
+    fetch('/login',{
         method:'POST',
         body: JSON.stringify({
             nomes:nomes,
@@ -38,11 +38,11 @@ function logar(){
         headers:{'content-type':'application/json'}
     })
     
-    .then(async (resp)=> {
+    .then(async (resp) => {
         var status = await resp.text();
         console.log(status)
         if(status == 'conectado'){
-            location.href("./src/templates/menu.html");
+            location.href = "/src/templates/menu.html"
         }else{
             alert('Usuário e/ou senha inválidos!');
         }
