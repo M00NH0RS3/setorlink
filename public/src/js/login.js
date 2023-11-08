@@ -13,7 +13,7 @@ function logar(){
             nomes:nomes,
             senha:senha
         }),
-        headers:{'content-type':'application/json'}
+        headers: { 'content-type' : 'application/json' }
     })
     
     .then(async (resp) => {
