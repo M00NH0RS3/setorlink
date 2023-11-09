@@ -31,6 +31,16 @@ main{
 .app{
     width: 100%;
     max-width: 718px;
+    background-color: rgba(58, 69, 94, 0.638);
+    padding: 15px;
+    border-radius: 5px;
+    height: 718px;
+    overflow-y: hidden;
+}
+
+header{
+    position: relative;
+    text-align: left;
 }
 
 .app header{
@@ -38,6 +48,7 @@ main{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    padding: 5px;
 }
 
 .app header h1{
@@ -50,6 +61,14 @@ main{
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
+}
+
+.todo-list{
+    height: 100%;
+    max-height: 90%;
+    position: relative;
+    overflow-y: auto;
+    padding: 1rem;
 }
 
 .item{
@@ -217,4 +236,15 @@ nav.menu-lateral.expandir .txt-link{
 ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0e0e66;
+    border-radius: 50px;
 }
