@@ -1,11 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Chat</title>
 </head>
+
 <body>
-    
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu ">
+                <a href="../templates/menu.html">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu ativo">
+                <a href="../templates/chat.html">
+                    <span class="icon"><i class="fa-solid fa-comments"></i></span>
+                    <span class="txt-link">Chat</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../templates/tarefas.html">
+                    <span class="icon"><i class="fa-solid fa-list-check"></i></span>
+                    <span class="txt-link">Tarefas</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../templates/agenda.html">
+                    <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+                    <span class="txt-link">Agenda</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../templates/config.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+                    <span class="txt-link">Configurações</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../templates/user.html">
+                    <span class="icon"><i class="fa-solid fa-circle-user"></i></span>
+                    <span class="txt-link">Usuário</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <div class="user-list">
+                <h2><img src="/pacotes/img/download.png" alt=""></i> Chat</h2>
+                <ul>
+                    <li class="ativo-set">
+                        <p>Compras <i class="fa-solid fa-1"></i></p>
+                    </li>
+                    <li class="ativo-set" id="selc">
+                        <p>Produção <i class="fa-solid fa-ellipsis fa-bounce"></i></p>
+                    </li>
+                    <li class="desativo-set">
+                        <p>Engenharia <i class="fa-solid fa-3"></i></p>
+                    </li>
+                    <li class="desativo-set">
+                        <p>Financeiro</p>
+                    </li>
+                    <li class="ativo-set">
+                        <p>Comercial <i class="fa-solid fa-ellipsis fa-bounce"></i></p>
+                    </li>
+                    <li class="desativo-set">
+                        <p>Chaparia </p>
+                    </li>
+                    <li class="ativo-set">
+                        <p>Fiscal <i class="fa-solid fa-1"></i></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção <i class="fa-solid fa-ellipsis fa-bounce"></i></h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="../js/chat.js"></script> -->
+    <script src="../js/menu.js"></script>
 </body>
+
 </html>
