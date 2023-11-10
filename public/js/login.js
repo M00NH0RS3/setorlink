@@ -1,16 +1,16 @@
 function logar(){
-    var nome = document.getElementById('nome').value;
+    var nomes = document.getElementById('nomes').value;
     var senha = document.getElementById('senha').value;
 
     console.log(JSON.stringify({
-        nome:nome,
+        nomes:nomes,
         senha:senha
     }));
 
     fetch('/login',{
         method:'POST',
         body: JSON.stringify({
-            nome:nome,
+            nomes:nomes,
             senha:senha
         }),
         headers: { 'content-type' : 'application/json' }
