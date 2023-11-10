@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
+:root{
+    --primary--color:#0056b3;
+    --secundary--color: #ddd;
+    --extra--color--1: #007bff;
+    --extra--color--2: #3b3b3b;
+    --body--bg--color: #242222;
+}
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +25,7 @@ button{
 body{
     color: #fff;
     height: 100vh;
-    background-color: #232354;
+    background-color: var(--body--bg--color);
 }
 
 main{
@@ -31,10 +38,10 @@ main{
 .app{
     width: 100%;
     max-width: 718px;
-    background-color: rgba(58, 69, 94, 0.638);
+    background-color: #373737;
     padding: 15px;
     border-radius: 5px;
-    height: 718px;
+    height: 710px;
     overflow-y: hidden;
 }
 
@@ -77,7 +84,7 @@ header{
     justify-content: space-between;
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: #1e223d;
+    background-color: #24222258;
     box-shadow: 0 0 4px rgba(0,0,0,0.1);
     margin-bottom: 1.5rem;
 }
@@ -160,9 +167,9 @@ nav{
 nav.menu-lateral{
     width: 80px;
     height: 100%;
-    background-color: #030367;
+    background-color: var(--primary--color);
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #daf7fe;
+    box-shadow: 3px 0 0 var(--secundary--color);
 
     position: fixed;
     top: 0;
@@ -178,7 +185,7 @@ nav.menu-lateral.expandir{
 .btn-expandir{
     width: 100%;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .btn-expandir > i{
@@ -197,11 +204,11 @@ ul li.item-menu{
 }
 
 ul li.ativo{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu:hover{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu a{
@@ -216,11 +223,11 @@ ul li.item-menu a{
 }
 
 ul li.item-menu.ativo a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu:hover a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu a .txt-link{
@@ -241,10 +248,10 @@ ul li.item-menu a .icon > i{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: var(--secundary--color);
     border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #0e0e66;
+    background: var(--primary--color);
     border-radius: 50px;
 }

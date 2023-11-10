@@ -1,5 +1,9 @@
-:root {
-  --primary-clr: #030367;
+:root{
+  --primary--color:#0056b3;
+  --secundary--color: #ddd;
+  --extra--color--1: #007bff;
+  --extra--color--2: #3b3b3b;
+  --body--bg--color: #242222;
 }
 * {
   margin: 0;
@@ -16,7 +20,7 @@
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-clr);
+  background: var(--primary-color);
   border-radius: 50px;
 }
 
@@ -40,7 +44,7 @@ body {
   color: #fff;
   display: flex;
   border-radius: 5px;
-  background-color: #373c4f;
+  background-color: #373737;
 }
 .left {
   width: 60%;
@@ -93,7 +97,7 @@ body {
 }
 .calendar .month .prev:hover,
 .calendar .month .next:hover {
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 .calendar .weekdays {
   width: 100%;
@@ -130,7 +134,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--primary-clr);
+  color: var(--primary--color);
   border: 1px solid #f5f5f5;
 }
 .calendar .days .day:nth-child(7n + 1) {
@@ -148,7 +152,7 @@ body {
 
 .calendar .days .day:not(.prev-date, .next-date):hover {
   color: #fff;
-  background-color: var(--primary-clr);
+  background-color: var(--primary--color);
 }
 .calendar .days .prev-date,
 .calendar .days .next-date {
@@ -158,7 +162,7 @@ body {
   position: relative;
   font-size: 2rem;
   color: #fff;
-  background-color: var(--primary-clr);
+  background-color: var(--primary--color);
 }
 .calendar .days .active::before {
   content: "";
@@ -167,7 +171,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 2px var(--primary-clr);
+  box-shadow: 0 0 10px 2px var(--primary--color);
 }
 .calendar .days .today {
   font-size: 2rem;
@@ -184,7 +188,7 @@ body {
   height: 6px;
   border-radius: 30px;
   transform: translateX(-50%);
-  background-color: var(--primary-clr);
+  background-color: var(--primary--color);
 }
 .calendar .days .day:hover.event::after {
   background-color: #fff;
@@ -205,14 +209,14 @@ body {
   gap: 5px;
   padding: 0 20px;
   margin-bottom: 20px;
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 .calendar .goto-today .goto {
   display: flex;
   align-items: center;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid var(--primary-clr);
+  border: 1px solid var(--primary--color);
 }
 .calendar .goto-today .goto input {
   width: 100%;
@@ -221,24 +225,24 @@ body {
   border: none;
   border-radius: 5px;
   padding: 0 20px;
-  color: var(--primary-clr);
+  color: var(--primary--color);
   border-radius: 5px;
 }
 .calendar .goto-today button {
-  padding: 5px 10px;
-  border: 1px solid var(--primary-clr);
+  padding: 10px 10px;
+  border: 1px solid var(--primary--color);
   border-radius: 5px;
   background-color: transparent;
   cursor: pointer;
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 .calendar .goto-today button:hover {
   color: #fff;
-  background-color: var(--primary-clr);
+  background-color: var(--primary--color);
 }
 .calendar .goto-today .goto button {
   border: none;
-  border-left: 1px solid var(--primary-clr);
+  border-left: 1px solid var(--primary--color);
   border-radius: 0;
 }
 .container .right {
@@ -292,7 +296,7 @@ body {
   padding: 0 20px;
   padding-left: 30px;
   color: #fff;
-  background: linear-gradient(90deg, #3f4458, transparent);
+  background: linear-gradient(90deg, #424242, transparent);
   cursor: pointer;
 }
 /* even event */
@@ -300,7 +304,7 @@ body {
   background: transparent;
 }
 .events .event:hover {
-  background: linear-gradient(90deg, var(--primary-clr), transparent);
+  background: linear-gradient(90deg, var(--primary--color), transparent);
 }
 .events .event .title {
   display: flex;
@@ -313,7 +317,7 @@ body {
   margin-left: 20px;
 }
 .events .event i {
-  color: var(--primary-clr);
+  color: var(--primary--color);
   font-size: 0.5rem;
 }
 .events .event:hover i {
@@ -341,7 +345,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0.3;
-  color: var(--primary-clr);
+  color: var(--primary--color);
   transform: translateY(-50%);
 }
 .events .event:hover::after {
@@ -402,7 +406,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  color: #373c4f;
+  color: #373737;
   border-bottom: 1px solid #f5f5f5;
 }
 .add-event-header .close {
@@ -410,7 +414,7 @@ body {
   cursor: pointer;
 }
 .add-event-header .close:hover {
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 .add-event-header .title {
   font-size: 1.2rem;
@@ -441,16 +445,16 @@ body {
   padding: 0 10px;
   font-size: 1rem;
   font-weight: 400;
-  color: #373c4f;
+  color: #373737;
 }
 .add-event-body .add-event-input input::placeholder {
   color: #a5a5a5;
 }
 .add-event-body .add-event-input input:focus {
-  border-bottom: 1px solid var(--primary-clr);
+  border-bottom: 1px solid var(--primary--color);
 }
 .add-event-body .add-event-input input:focus::placeholder {
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 .add-event-footer {
   display: flex;
@@ -465,15 +469,15 @@ body {
   outline: none;
   border: none;
   color: #fff;
-  background-color: var(--primary-clr);
+  background-color: var(--primary--color);
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid var(--primary-clr);
+  border: 1px solid var(--primary--color);
 }
 .add-event-footer .add-event-btn:hover {
   background-color: transparent;
-  color: var(--primary-clr);
+  color: var(--primary--color);
 }
 
 /* media queries */
@@ -577,20 +581,20 @@ body {
 
 body{
     height: 100vh;
-    background-color: #232354;
+    background-color: var(--body--bg--color);
 }
 
 nav.menu-lateral{
     width: 80px;
     height: 100%;
-    background-color: #030367;
+    background-color: var(--primary--color);
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #daf7fe;
+    box-shadow: 3px 0 0 var(--secundary--color);
 
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
+    overflow: hidden;   
     transition: .5s;
 }
 
@@ -601,7 +605,7 @@ nav.menu-lateral.expandir{
 .btn-expandir{
     width: 100%;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .btn-expandir > i{
@@ -620,11 +624,11 @@ ul li.item-menu{
 }
 
 ul li.ativo{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu:hover{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu a{
@@ -639,11 +643,11 @@ ul li.item-menu a{
 }
 
 ul li.item-menu.ativo a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu:hover a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu a .txt-link{

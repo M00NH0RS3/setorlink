@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root{
+    --primary--color:#0056b3;
+    --secundary--color: #ddd;
+    --extra--color--1: #007bff;
+    --extra--color--2: #3b3b3b;
+    --body--bg--color: #242222;
+}
+body {
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +19,15 @@
 
 body{
     height: 100vh;
-    background-color: #232354;
+    background-color: var(--body--bg--color);
 }
 
 nav.menu-lateral{
     width: 80px;
     height: 100%;
-    background-color: #030367;
+    background-color: var(--primary--color);
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #daf7fe;
+    box-shadow: 3px 0 0 var(--secundary--color);
 
     position: fixed;
     top: 0;
@@ -51,11 +62,11 @@ ul li.item-menu{
 }
 
 ul li.ativo{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu:hover{
-    background-color: #daf7fe;
+    background-color: var(--secundary--color);
 }
 
 ul li.item-menu a{
@@ -70,11 +81,11 @@ ul li.item-menu a{
 }
 
 ul li.item-menu.ativo a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu:hover a{
-    color: #030367;
+    color: var(--primary--color);
 }
 
 ul li.item-menu a .txt-link{
