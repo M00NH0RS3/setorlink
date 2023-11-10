@@ -19,19 +19,28 @@
     <section id="sobre">
       <div class="contSobre">
         <h3>Excelência em Comunicação Interna:</h3>
-        <p>Priorizamos a melhoria da comunicação interna em todos os níveis da organização. Isso inclui a criação de canais de comunicação eficazes, a promoção de uma cultura de transparência e a adoção de tecnologias modernas para facilitar a troca de informações entre os setores.</p>
+        <p>Priorizamos a melhoria da comunicação interna em todos os níveis da organização. Isso inclui a criação de
+          canais de comunicação eficazes, a promoção de uma cultura de transparência e a adoção de tecnologias modernas
+          para facilitar a troca de informações entre os setores.</p>
       </div>
       <div class="contSobre">
         <h3>Eficiência Operacional e Colaboração:</h3>
-        <p>Buscamos constantemente aprimorar a eficiência operacional em todos os departamentos. Isso envolve a implementação de processos eficazes, o incentivo à colaboração entre equipes e a busca por maneiras de otimizar nossas operações para alcançar nossos objetivos de negócios.</p>
+        <p>Buscamos constantemente aprimorar a eficiência operacional em todos os departamentos. Isso envolve a
+          implementação de processos eficazes, o incentivo à colaboração entre equipes e a busca por maneiras de
+          otimizar nossas operações para alcançar nossos objetivos de negócios.</p>
       </div>
       <div class="contSobre">
         <h3>Inovação Tecnológica:</h3>
-        <p>Estamos comprometidos com a introdução de inovações tecnológicas em nossa empresa. Isso inclui a adoção de ferramentas e sistemas avançados que podem melhorar nossa produtividade, aprimorar a tomada de decisões e manter nossa empresa atualizada com as tendências do mercado.</p>
+        <p>Estamos comprometidos com a introdução de inovações tecnológicas em nossa empresa. Isso inclui a adoção de
+          ferramentas e sistemas avançados que podem melhorar nossa produtividade, aprimorar a tomada de decisões e
+          manter nossa empresa atualizada com as tendências do mercado.</p>
       </div>
       <div class="contSobre">
         <h3>Satisfação do Cliente e Qualidade de Serviço:</h3>
-        <p>Priorizamos a satisfação do cliente como uma de nossas principais metas. Comprometemo-nos a oferecer serviços da mais alta qualidade, excedendo as expectativas dos clientes e mantendo relacionamentos sólidos com eles. Essa diretriz enfatiza a importância de entender as necessidades e expectativas dos nossos clientes e garantir que nossos produtos e serviços atendam ou superem essas expectativas.</p>
+        <p>Priorizamos a satisfação do cliente como uma de nossas principais metas. Comprometemo-nos a oferecer serviços
+          da mais alta qualidade, excedendo as expectativas dos clientes e mantendo relacionamentos sólidos com eles.
+          Essa diretriz enfatiza a importância de entender as necessidades e expectativas dos nossos clientes e garantir
+          que nossos produtos e serviços atendam ou superem essas expectativas.</p>
       </div>
     </section>
   </section>
@@ -40,33 +49,33 @@
     <img id="logo" src="./img/logo-setorlink.png" alt="logo-setorlink">
     <i class="fa-solid fa-bars" onclick="abrirInfo()"></i>
   </header>
-  
+
   <form>
     <div class="loginTela">
       <div class="inputBox">
         <i class="fa-regular fa-user"></i>
-        <input type="text" id="username" name="username" class="input" placeholder="Username" autocomplete="off" required />
-      </div>
-      
-      <div class="inputBox">
-        <i class="fa-solid fa-key"></i>
-        <input type="password" id="password" name="password" class="input" placeholder="Password" autocomplete="off" required />
-        <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha  ()" ></i>
+        <input type="text" id="nome" class="input" placeholder="Usuário" autocomplete="off" required />
       </div>
 
-      <input type="submit" value="Login" class="button" id="btn-login" onclick="logar()"/>
+      <div class="inputBox">
+        <i class="fa-solid fa-key"></i>
+        <input type="password" id="senha" class="input" placeholder="Senha" autocomplete="off" required />
+        <i class="fa-regular fa-eye" id="openPw" onclick="mostrarSenha()"></i>
+      </div>
+
+      <input type="submit" value="Login" class="button" id="btn-login" onclick="logar()" />
       <p class="links"><a href="./templates/criarConta.html">Criar Conta</a> | <a href="#">Esqueci a senha</a></p>
     </div>
   </form>
   <footer>
     <p>&copy; 2023 SetorLink</p>
   </footer>
-  
+
   <script src="./js/viewPassword.js"></script>
   <script src="./js/openInfo.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/login.js"></script>
-  
+
 </body>
 
 </html>

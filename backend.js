@@ -38,7 +38,7 @@ app.post('/login', (req, res) => {
     const usuarioscad = fs.readFileSync('/users.json')
     const usuariosparse = JSON.parse(usuarioscad)
 
-    var nome = req.body.nomes
+    var nome = req.body.nome
     var senha = req.body.senha
 
     for(var umUsuario of usuariosparse) {
