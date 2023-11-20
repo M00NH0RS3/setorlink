@@ -19,7 +19,7 @@ function logar(){
     .then(async (resp) => {
         var status = await resp.text();
         console.log(status)
-        if(status == 'conectado'){
+        if(status == 'Conectado'){
             location.href = "../templates/menu.html"
         }else{
             alert('Usuário e/ou senha inválidos!');
