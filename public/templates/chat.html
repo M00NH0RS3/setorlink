@@ -58,38 +58,241 @@
             </li>
         </ul>
     </nav>
-    <div class="chat-container">
-        <div class="chat-sidebar">
-            <div class="user-list">
-                <h2><img src="/pacotes/img/download.png" alt=""></i> Chat</h2>
-                <ul>
-                    <li class="ativo-set">
-                        <p>Compras <i class="fa-solid fa-1"></i></p>
-                    </li>
-                    <li class="ativo-set" id="selc">
-                        <p>Produção <i class="fa-solid fa-ellipsis fa-bounce"></i></p>
-                    </li>
-                    <li class="desativo-set">
-                        <p>Engenharia <i class="fa-solid fa-3"></i></p>
-                    </li>
-                    <li class="desativo-set">
-                        <p>Financeiro</p>
-                    </li>
-                    <li class="ativo-set">
-                        <p>Comercial <i class="fa-solid fa-ellipsis fa-bounce"></i></p>
-                    </li>
-                    <li class="desativo-set">
-                        <p>Chaparia </p>
-                    </li>
-                    <li class="ativo-set">
-                        <p>Fiscal <i class="fa-solid fa-1"></i></p>
-                    </li>
-                </ul>
-            </div>
+
+    <div class="chat-sidebar">
+        <div class="user-list">
+            <h2><img src="/img/logo-setorlink.png" alt=""></i> Chat</h2>
+            <ul>
+                <li class="chat-set ativo-set">
+                    <p>Compras <i class="fa-solid fa-1"></i></p>
+                </li>
+                <li class="chat-set ativo-set selecionado">
+                    <p>Produção <i class="fa-solid fa-ellipsis"><i class="fa-solid fa-pen"></i></i></p>
+                </li>
+                <li class="chat-set desativo-set">
+                    <p>Engenharia <i class="fa-solid fa-3"></i></p>
+                </li>
+                <li class="chat-set desativo-set">
+                    <p>Financeiro</p>
+                </li>
+                <li class="chat-set ativo-set">
+                    <p>Comercial <i class="fa-solid fa-ellipsis"><i class="fa-solid fa-pen"></i></i></p>
+                </li>
+                <li class="chat-set desativo-set">
+                    <p>Chaparia </p>
+                </li>
+                <li class="chat-set ativo-set">
+                    <p>Fiscal <i class="fa-solid fa-1"></i></p>
+                </li>
+            </ul>
         </div>
+    </div>
+
+    <div id="compras" class="chat-container ">
+
         <div class="chat-main">
             <div class="chat-header">
-                <h3>Produção <i class="fa-solid fa-ellipsis fa-bounce"></i></h3>
+                <h3>Produção <i class="fa-solid fa-ellipsis"></i></h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="producao" class="chat-container selecionado">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção</h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p><i class="fa-solid fa-ellipsis fa-bounce"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="engenharia" class="chat-container ">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção <i class="fa-solid fa-ellipsis"></i></h3>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
             <div class="chat-messages" id="chat-messages">
@@ -181,8 +384,411 @@
         </div>
     </div>
 
+    <div id="financeiro" class="chat-container ">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção <i class="fa-solid fa-ellipsis"></i></h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="comercial" class="chat-container ">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Comercial</h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe do comercial! Como estamos indo nas metas este mês?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Olá, senhor. Estamos progredindo bem, mas enfrentamos algumas resistências nos fechamentos.
+                        </p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Compreendo. Alguma estratégia específica para superar essas resistências?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Estamos ajustando nossas abordagens de venda e intensificando o suporte pós-venda para
+                            construir confiança.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Excelente. E sobre os orçamentos? Algum desafio notável?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns clientes expressaram preocupações com os custos. Estamos refinando nossas propostas
+                            para destacar o valor agregado de nossos produtos.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa abordagem. Precisamos destacar a qualidade. Alguma novidade ou oportunidade que deva ser
+                            discutida?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Estamos explorando uma parceria potencial com uma empresa de logística para otimizar
+                            entregas e reduzir custos para os clientes.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. Continuem com o excelente trabalho e mantenham-me atualizado sobre essas iniciativas.
+                            Estou confiante de que superaremos esses desafios juntos.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Agradecemos, senhor. Estamos comprometidos em impulsionar as vendas e encontrar soluções para
+                            melhor atender nossos clientes.</p>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-c"></i>
+                    </div>
+                    <div class="message-content">
+                        <p><i class="fa-solid fa-ellipsis fa-bounce"></i>.</p>
+                    </div>
+                </div>
+                <br></br>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chaparia" class="chat-container ">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção <i class="fa-solid fa-ellipsis"></i></h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="fiscal" class="chat-container ">
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3>Produção <i class="fa-solid fa-ellipsis"></i></h3>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Olá equipe de produção. Como estamos hoje?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Bom dia, senhor. Estamos progredindo, mas enfrentamos atrasos nos materiais.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Vou lidar com os fornecedores. E quanto aos testes de qualidade?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Alguns problemas em um lote, mas estamos resolvendo. A montagem está no ritmo.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Boa notícia. Alguma sugestão para melhorar a eficiência?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Consideramos novas ferramentas. Revisões contínuas podem ajudar.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Ótimo. E sobre a segurança?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Reforçamos práticas. Incidentes menores, mas sob controle.</p>
+                    </div>
+                </div>
+                <div class="message-box user">
+                    <div class="message-content">
+                        <p>Mantenham-me informado. Estamos juntos nisso. Obrigado pela dedicação, equipe.</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-d"></i>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-p"></i>
+                    </div>
+                    <div class="message-content">
+                        <p> Agradecemos, senhor. Continuaremos focados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- <script src="../js/chat.js"></script> -->
     <script src="../js/menu.js"></script>
+    <script src="../js/selecChat.js"></script>
 </body>
 
 </html>
