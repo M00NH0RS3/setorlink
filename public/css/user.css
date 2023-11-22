@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root{
+    --primary--color:#0056b3;
+    --secundary--color: #ddd;
+    --extra--color--1: #007bff;
+    --extra--color--2: #3b3b3b;
+    --body--bg--color: #242222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: var(--body--bg--color);
+}
+
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: #ddd;
+    background  : #ddd;
+    color       : var(--body--bg--color);
+}
+
+.btn-default:hover {
+    border-color: var(--body--bg--color);
+    background  : #dddddda4;
+    color       : #fff;
+}
+
+.btn-default.md-btn-flat:hover {
+    border-color: var(--body--bg--color);
+    background  : #dddddda4;
+    color       : var(--body--bg--color);
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: var(--extra--color--1);
+    background  : transparent;
+    color       : var(--extra--color--1);
+}
+
+.btn-primary{
+    border-color: var(--extra--color--1);
+    background  : var(--extra--color--1);
+    color       : #fff;
+
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.list-group-item.active{
+    background-color: var(--extra--color--1);
+    color: #fff;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+h3{
+    color: var(--secundary--color);
+}
+
+
+
+
+
+
+/* menu */
+
+
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: var(--primary--color);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 var(--secundary--color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.btn-expandir > i{
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: var(--secundary--color);
+}
+
+ul li.item-menu:hover{
+    background-color: var(--secundary--color);
+}
+
+ul li.item-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu.ativo a{
+    color: var(--primary--color);
+}
+
+ul li.item-menu:hover a{
+    color: var(--primary--color);
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--secundary--color);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary--color);
+    border-radius: 50px;
+}
