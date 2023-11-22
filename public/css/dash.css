@@ -172,13 +172,20 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-left: 20px;
 
+}
+
+a{
+    color: var(--secundary--color);
+    text-emphasis: none;
+    text-decoration: none;
 }
 
 td,
 th {
     text-align: left;
-    padding: 15px;
+    padding: 12px;
     color: #ddd;
     border-bottom: 1px solid var(--secundary--color)40;
 }
