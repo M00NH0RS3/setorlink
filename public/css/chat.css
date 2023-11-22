@@ -305,15 +305,16 @@ body{
 }
 
 nav{
-    z-index: 1;
+    z-index: 3;
 }
 
 nav.menu-lateral{
     width: 80px;
     height: 100%;
-    background-color: #0056b3;
+    background-color: var(--primary--color);
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #ddd;
+    border-right: 3px solid var(--secundary--color);
+
 
     position: fixed;
     top: 0;
@@ -324,6 +325,8 @@ nav.menu-lateral{
 
 nav.menu-lateral.expandir{
     width: 300px;
+    box-shadow: 0 0 80px var(--body--bg--color);
+    border-right: 3px solid var(--secundary--color);
 }
 
 .btn-expandir{

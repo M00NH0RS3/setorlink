@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root{
+    --primary--color:#0056b3;
+    --secundary--color: #ddd;
+    --extra--color--1: #007bff;
+    --extra--color--2: #3b3b3b;
+    --body--bg--color: #242222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #1b203d;
+    background-color: var(--body--bg--color);
     overflow: hidden;
-    font-family: system-ui;
 }
 
 .clearfix {
@@ -19,51 +31,19 @@ body {
 }
 
 .logo span {
-    color: #f7403b;
+    color: var(--extra--color--1);
 }
 
-.sidenav {
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #272c4a;
-    overflow: hidden;
-    transition: 0.5s;
-    padding-top: 30px;
-}
 
-.sidenav a {
-    padding: 15px 8px 15px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-    background-color: #1b203d;
-}
-
-.sidenav {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 .head {
-    padding: 20px;
+    padding: 25px;
 }
 
 .col-div-6 {
@@ -75,6 +55,10 @@ body {
     display: inline-block;
     float: right;
     width: 160px;
+}
+
+img{
+    border-radius: 50%;
 }
 
 .pro-img {
@@ -106,9 +90,14 @@ body {
 .box {
     width: 85%;
     height: 100px;
-    background-color: #272c4a;
+    background-color: var(--primary--color);
     margin-left: 10px;
     padding: 10px;
+}
+
+h2{
+    color: var(--secundary--color);
+    font-size: 32px;
 }
 
 .box p {
@@ -124,14 +113,14 @@ body {
 .box p span {
     font-size: 20px;
     font-weight: 400;
-    color: #818181;
+    color: var(--secundary--color);
 }
 
 .box-icon {
     font-size: 40px !important;
     float: right;
     margin-top: 35px !important;
-    color: #818181;
+    color: var(--secundary--color);
     padding-right: 10px;
 }
 
@@ -141,7 +130,7 @@ body {
 }
 
 .col-div-4 {
-    width: 30%;
+    width: 29%;
     float: left;
 }
 
@@ -151,8 +140,9 @@ body {
 
 .content-box p {
     margin: 0px;
-    font-size: 20px;
-    color: #f7403b;
+    font-size: 22px;
+    color: var(--secundary--color);
+    font-weight: 700;
 }
 
 .content-box p span {
@@ -165,7 +155,7 @@ body {
 .box-8,
 .box-4 {
     width: 95%;
-    background-color: #272c4a;
+    background-color: var(--primary--color);
     height: 330px;
 
 }
@@ -190,7 +180,7 @@ th {
     text-align: left;
     padding: 15px;
     color: #ddd;
-    border-bottom: 1px solid #81818140;
+    border-bottom: 1px solid var(--secundary--color)40;
 }
 
 .circle-wrap {
@@ -199,6 +189,7 @@ th {
     height: 150px;
     background: #e6e2e7;
     border-radius: 50%;
+    box-shadow: 0 0 10px #96c8fd;
 }
 
 .circle-wrap .circle .mask,
@@ -215,7 +206,7 @@ th {
 
 .circle-wrap .circle .mask .fill {
     clip: rect(0px, 75px, 150px, 0px);
-    background-color: #f7403b;
+    background-color: var(--extra--color--1);
 }
 
 .circle-wrap .circle .mask.full,
@@ -238,7 +229,7 @@ th {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--body--bg--color);
     line-height: 130px;
     text-align: center;
     margin-top: 10px;
@@ -247,4 +238,5 @@ th {
     z-index: 100;
     font-weight: 700;
     font-size: 2em;
+    color: #fff;
 }

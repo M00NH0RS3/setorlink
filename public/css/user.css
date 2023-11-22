@@ -16,6 +16,7 @@
 
 body {
     background: var(--body--bg--color);
+    max-height: 95vh;
 }
 
 .ui-w-80 {
@@ -129,6 +130,8 @@ label.btn {
 
 h3{
     color: var(--secundary--color);
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -152,7 +155,8 @@ nav.menu-lateral{
     height: 100%;
     background-color: var(--primary--color);
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 var(--secundary--color);
+    border-right: 3px solid var(--secundary--color);
+
 
     position: fixed;
     top: 0;
@@ -163,6 +167,8 @@ nav.menu-lateral{
 
 nav.menu-lateral.expandir{
     width: 300px;
+    box-shadow: 0 0 80px var(--body--bg--color);
+    border-right: 3px solid var(--secundary--color);
 }
 
 .btn-expandir{
