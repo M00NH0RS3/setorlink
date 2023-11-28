@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pacotes/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Loja de Pacotes</title>
+</head>
+<body>
+    <img src="./img/logo-setorlink.png" alt="">
+    <header>
+        <h1>Planos de Contratação</h1>
+    </header>
+    <i class="fa-solid fa-right-to-bracket fa-flip-horizontal" onclick="backSyst()"></i>
+
+
+    <main>
+        <section class="package">
+            <h2>Pacote Básico</h2>
+            <div class="info">
+                <ul>
+                    <li>5 acessos</li>
+                    <li>Chat Setorial</li>
+                </ul>
+            </div>
+            <div class="value">
+                <p class="price">R$ 19,99</p>
+                <button onclick="buyPackage('Básico')">Comprar</button>
+            </div>
+        </section>
+
+        <section class="package">
+            <h2>Pacote Padrão</h2>
+            <div class="info">
+                <ul>
+                    <li>10 acessos</li>
+                    <li>Chat Setorial</li>
+                    <li>Checklist</li>
+                </ul>
+            </div>
+            <div class="value">
+                <p class="price">R$ 59,99</p>
+                <button onclick="buyPackage('Padrão')">Comprar</button>
+            </div>
+        </section>
+
+        <section class="package">
+            <h2>Pacote Premium</h2>
+            <div class="info">
+                <ul>
+                    <li>Acesso Ilimitado</li>
+                    <li>Chat Setorial</li>
+                    <li>Checklist</li>
+                    <li>Agenda de Eventos</li>
+                </ul>
+            </div>
+            <div class="value">
+                <p class="price">R$ 99,99</p>
+                <button onclick="buyPackage('Premium')">Comprar</button>
+            </div>
+        </section>
+
+        <section class="package">
+            <h2>Pacote Anual</h2>
+            <div class="info">
+                <ul>
+                    <li>Acesso Ilimitado</li>
+                    <li>Chat Setorial</li>
+                    <li>Checklist</li>
+                    <li>Agenda de Eventos</li>
+                </ul>
+            </div>
+            <div class="value">
+                <p class="price">R$ 1.127,99</p>
+                <button onclick="buyPackage('Anual')">Comprar</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SetorLink</p>
+    </footer>
+
+    <script src="../pacotes/store.js"></script>
+</body>
+</html>

@@ -62,12 +62,50 @@
             </li>
         </ul>
     </nav>
-        
+
     <main>
-        
+        <h2 class="font-weight-bold py-3 mb-0">
+            Configurações do Sistema
+        </h2>
+        <i class="fa-solid fa-store" onclick="abrirLoja()"></i>
+        <section class="conteudo">
+            <section class="empresa">
+                <img src="../img/logo-techpulse.png" id="logo">
+                <h3>TechPulse Ltda.</h3>
+                <p>TechPulse é uma empresa líder em soluções tecnológicas no setor elétrico, fundada pelo empreendedor Matheus Maciel aos 20 anos. Com uma base técnica sólida como técnico em eletrotécnica e atualmente cursando engenharia elétrica, Matheus impulsionou a TechPulse para se destacar no desenvolvimento de tecnologias avançadas e eficientes. A empresa é reconhecida por sua inovação e compromisso com soluções sustentáveis no mercado eletrônico, solidificando sua posição como referência na indústria.</p>
+
+            </section>
+            <section class="atributos">
+                <div class="atrib">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>USUÁRIOS</h4>
+                    <p>8</p>
+                </div>
+                <div class="atrib">
+                    <i class="fa-regular fa-comments"></i>
+                    <h4>CHAT</h4>
+                    <p>HABILITADO</p>
+                </div>
+                <div class="atrib">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h4>TASKLIST</h4>
+                    <p>HABILITADO</p>
+                </div>
+                <div class="atrib">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h4>AGENDA</h4>
+                    <p>HABILITADO</p>
+                </div>
+            </section>
+        </section>
     </main>
 
     <script src="../js/menu.js"></script>
+    <script>
+        function abrirLoja(){
+            window.location = "../pacotes/store.html";
+        }
+    </script>
 </body>
 
 </html>

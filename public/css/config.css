@@ -110,3 +110,100 @@ ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left: 10px;
 }
+
+main{
+    margin-left: 15%;
+    /* height: 70vh; */
+    overflow: hidden;
+}
+.empresa{
+    width: 450px;
+    height: 70vh;
+    background-color: var(--primary--color);
+    margin-right: 30px;
+    
+}
+
+h2{
+    color: var(--secundary--color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.fa-store{
+    position: absolute;
+    top: 6.4%;
+    right: 8%;
+    color: var(--secundary--color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.atributos{
+    display: grid;
+    grid-template-columns: repeat(2, 23vw);
+}
+
+div.atrib{
+    height: 32vh;
+    width: 20vw;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+    background-color: #fff;
+    border-bottom: 8px solid var(--extra--color--1);
+    margin-bottom: 6vh;
+    padding-left: 5%;
+}
+
+div.atrib > i{
+    font-size: 6rem;
+    margin-top: 30%;
+    margin-bottom: 9%;
+    color: var(--extra--color--1);
+}
+
+.empresa{
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+}
+
+.empresa > p{
+    text-align: justify;
+    margin: 5%;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    height: 30%;
+    margin-top: 15px;
+    box-shadow: inset 0px -5px 25px -15px #ffffff;
+}
+
+h3{
+    font-size: 22px;
+}
+
+img{
+    border-radius: 50%;
+    height: 40%;
+    margin-top: 10%;
+    margin-bottom: 13%;
+    box-shadow: 0 0 15px #242222;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--body--bg--color);
+    border-radius: 50px;
+}
